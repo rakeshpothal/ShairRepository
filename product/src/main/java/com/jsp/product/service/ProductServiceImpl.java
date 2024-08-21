@@ -66,9 +66,9 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<ProductDTO> listAllProduct() {
 		List<ProductDTO> productList = new ArrayList<ProductDTO>();
-		
+
 		List<ProductEntity> allProduct = productConfig.getAllProduct();
-		
+
 		for (ProductEntity productEntity : allProduct) {
 			ProductDTO productDTO = new ProductDTO(productEntity.getName(), productEntity.getSkuCode());
 			productList.add(productDTO);

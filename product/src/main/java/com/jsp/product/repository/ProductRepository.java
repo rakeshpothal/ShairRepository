@@ -33,11 +33,11 @@ public class ProductRepository {
 		query.setParameter("skucode", skuCode);
 		return (ProductEntity) query.getSingleResult();
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public List<ProductEntity> getAllProduct() {
 		String hqlQuery = "from ProductEntity";
-		Query query = entityManager.createQuery(hqlQuery,ProductEntity.class);
+		Query query = entityManager.createQuery(hqlQuery, ProductEntity.class);
 		return query.getResultList();
 	}
 }

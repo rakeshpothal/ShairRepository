@@ -16,23 +16,22 @@ public class ProductEntity {
 	@Column(name = "alt_key")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long altKey;
-	
-	
+
 	@Column(name = "name")
 	private String name;
-	
+
 	@Column(name = "description")
 	private String description;
-	
+
 	@Column(name = "price")
 	private Double price;
 
 	@Column(name = "created_date")
 	private Date createdDate;
-	
+
 	@Column(name = "modified_date")
 	private Date modifiedDate;
-	
+
 	@Column(name = "sku_code")
 	private String skuCode;
 

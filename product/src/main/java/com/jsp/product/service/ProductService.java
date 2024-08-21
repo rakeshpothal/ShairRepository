@@ -14,7 +14,7 @@ public interface ProductService {
 	public InventoryEntity getInventoryBySkuCode(long skuCode);
 
 	public int updateProductQuantity(long SkuCode, int quantity);
-	
+
 	public List<ProductDTO> listAllProduct();
 
 }

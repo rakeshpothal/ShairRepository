@@ -46,13 +46,12 @@ public class OrderServiceImpl implements OrderService {
 				new Thread() {
 					@Override
 					public void run() {
-						int quantity = inventoryBySkuCode.getQuantity()-orderDTO.getQuantity();
+						int quantity = inventoryBySkuCode.getQuantity() - orderDTO.getQuantity();
 						int updateProductQuantity = productServiceImpl.updateProductQuantity(skuCode, quantity);
 						System.out.println(updateProductQuantity);
 					}
 				}.start();
 			}
-			
 
 		}
 

@@ -65,6 +65,5 @@ public class ProductDTO {
 	public String toString() {
 		return "ProductDTO [name=" + name + ", skuCode=" + skuCode + "]";
 	}
-	
 
 }
