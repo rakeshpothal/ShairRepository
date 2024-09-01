@@ -23,17 +23,18 @@ public class App {
 		ProductServiceImpl productServiceImpl = context.getBean(ProductServiceImpl.class);
 		OrderServiceImpl orderServiceImpl = context.getBean(OrderServiceImpl.class);
 		List<OrderDTO> order = new ArrayList<OrderDTO>();
-		System.out.println("Enter Product Name");
-		String name = s.nextLine();
-		System.out.println("Enter product description");
-		String description = s.nextLine();
-		System.out.println("Set Product Price");
-		double price = s.nextDouble();
-		System.out.println("Enter product Quantity");
-		int quantity = s.nextInt();
-		ProductDTO productDTO = new ProductDTO(name, description, price, quantity);
-
-		productServiceImpl.addProduct(productDTO);
+		
+//		System.out.println("Enter Product Name");
+//		String name = s.nextLine();
+//		System.out.println("Enter product description");
+//		String description = s.nextLine();
+//		System.out.println("Set Product Price");
+//		double price = s.nextDouble();
+//		System.out.println("Enter product Quantity");
+//		int quantity = s.nextInt();
+//		ProductDTO productDTO = new ProductDTO(name, description, price, quantity);
+//
+//		productServiceImpl.addProduct(productDTO);
 
 		System.out.println("Select Product");
 		productList(productServiceImpl);
